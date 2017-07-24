@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body {background-image: url("got.png"); background-repeat: no-repeat; background-size:cover; background-blend-mode: darken;}
+h1 {background-image: url("goth.jpg"); background-size: cover; font-family: cursive;}
+p {font-style: oblique; font-size: 25px; color: #524135;}
+</style>
+<body>
+  <center>
+    <h1> Ubbi Dubbi Translation</h1>
+    <p> Put in a sentence! </p>
+<table border=5>
+  <tr>
+    <th>
+      <p> Translate from English to Ubbi Dubbi ! </p>
+      <div> <input type="text" id="words" > </p> </div>
+      <button type= "button" onclick="ubbidubbi()"> TRANSLATE! </button>
+      <p id='no'> </p>
+    </th>
+    <th>
+      <p> Translate from Ubbi Dubbi to English ! </p>
+      <div> <input type="text" id="newwords" > </p> </div>
+      <button type="button" onclick= "undo()"> TRANSLATE! </button>
+      <p id="nos"> </p>
+    </th>
+  </tr>
+</table>
+
+  <hr> <p style="font-size: 20px; background-color:#FFCFCC; color:#FF5146;"> List of Everyone who has Ever Died on Game of Thrones (Well not everyone)</p>
+  <marquee scrollamount="30">
+    <img src="1.jpg" style=height:150px;width:200px>
+    <img src="2.jpg" style=height:150px;width:200px>
+    <img src="3.jpg" style=height:150px;width:200px>
+    <img src="4.jpg" style=height:150px;width:200px>
+    <img src="5.jpg" style=height:150px;width:200px>
+    <img src="6.jpg" style=height:150px;width:200px>
+    <img src="7.jpg" style=height:150px;width:200px>
+    <img src="8.jpg" style=height:150px;width:200px>
+    <img src="9.jpg" style=height:150px;width:200px>
+    <img src="10.jpg" style=height:150px;width:200px>
+    <img src="12.jpg" style=height:150px;width:200px>
+    <img src="13.jpg" style=height:150px;width:200px>
+    <img src="14.jpg" style=height:150px;width:200px>
+    <img src="15.jpg" style=height:150px;width:200px>
+    <img src="16.jpg" style=height:150px;width:200px>
+    <img src="17.jpg" style=height:150px;width:200px>
+    <img src="18.jpg" style=height:150px;width:200px>
+    <img src="19.jpg" style=height:150px;width:200px>
+    <img src="20.jpg" style=height:150px;width:200px>
+    <img src="21.jpg" style=height:150px;width:200px>
+    <img src="22.jpg" style=height:150px;width:200px>
+    <img src="23.jpg" style=height:150px;width:200px>
+    <img src="24.jpg" style=height:150px;width:200px>
+    <img src="25.jpg" style=height:150px;width:200px>
+    *insert a picture of you* </marquee>
+</center>
+<!--THIS IS JAVASCRIPT PART DONT TOUCH THIS THANKS. -->
+<script>
+function ubbidubbi(){
+var word=document.getElementById("words").value;
+var text=""
+for (var x=0; x < word.length; x++) {
+  //----------------
+  if (word.charAt(x)=="a" || word.charAt(x)=="e" || word.charAt(x)=="i" || word.charAt(x)=="o" || word.charAt(x)=="u"){
+   text=text+"ub"
+  }
+  text=text+word.charAt(x)
+}
+text=text+"<p> Your translation: "+ "<img src='whitewalker.png' style=height:100px> <h3> That's so cool. </h3> </p>"
+document.getElementById('no').innerHTML=text
+}
+</script>
+
+<script>
+function undo(){
+var word2=document.getElementById("newwords").value;
+var text2="";
+var x=0;
+while (x < word2.length) {
+   if (word2.charAt(x)=='u' && word2.charAt(x+1)=='b') {
+     text2=text2+word2.charAt(x+2);
+     x=x+3;
+}
+   else {
+      text2=text2+word2.charAt(x);
+      x=x+1;
+   }
+}
+text2="<p> Your translation: "+ text2+"<img src='hodor.png' style=height:100px> <h3> Hold the door. </h3> </p>"
+document.getElementById('nos').innerHTML=text2;
+}
+</script>
+
+<script>
+function pig(){
+var word3="hello there"  //expecting elloay heretay
+var text3=""
+var x=0
+while word3.charAt(x) != ' '{
+  nword=nword+ word.charAt(x)
+if (nword.charAt(0)=="a" || nword.charAt(0)=="e" || nword.charAt(0)=="i" || nword.charAt(0)=="o" || nword.charAt(0)=="u"){
+  nword=
+
+}
+}
+}
+</script>
+</body>
+</html>
