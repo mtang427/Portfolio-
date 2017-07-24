@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {background-image: url("snowflake.jpg")}
+table {background-color: #CBFEFB; font-size:25px}
+p {background-color: #C4FFF4;color: black}
+h1 {background-color: #CBFEFB; font-style: italic; font-family: fantasy;}
+
+marquee {background-color: #7AE2DC; }
+
+</style>
+<body>
+  <a name="chapter1"></a>
+  <br>
+  <center>
+  <h1> <img src="snowflakep.ico" style="height:20px;"> MadLibs: A Cold Day <img src="snowflakep.ico" style="height:20px;"> </h1>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport"content=width=device-width,initial-scale=1>
+    <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
+    <br>
+    <div class="w3-panel w3-aqua">
+
+<p> Adjective : <input type="text" id="adj" > </p>
+<p> Name : <input type="text" id="name" >  </p>
+<p> Color : <input type="text" id="color">  </p>
+<p> Verb: <input type="text" id="Verb">  </p>
+<p> Noun: <input type="text" id="Noun">  </p>
+<p> Adverb: <input type="text" id="Adverb">   </p>
+<button type= "button" onclick="replace()"> Submit and Get Your Story! </button>
+<table border=1> <tr> <th id='no'> </th> </tr> </table>
+<script>
+function replace() {
+var adj=document.getElementById("adj").value;
+var name=document.getElementById("name").value;
+var color=document.getElementById("color").value;
+var verb=document.getElementById("Verb").value;
+var noun=document.getElementById("Noun").value;
+var adverb= document.getElementById("Adverb").value;
+  document.getElementById('no').innerHTML= "One " + adj +" day "+name+
+  " the snowflake was feeling " + color + ". She couldn’t " + verb +
+  " why all the other snowflakes would give her the cold shoulder. One even told her to go back to the " + noun +
+  ". However, little did they know that she was their Queen. Therefore, in the end she had a warm heart, so she " + adverb+
+   " melted them all.";
+
+}
+</script>
+<div class="w3-panel w3-blue">
+  <hr> <marquee scrollamount="26">  <img src="snowman.gif" style="height: 170px;"> <img src="snowman.gif" style="height: 170px;"> <img src="snowman.gif" style="height: 170px;"> <img src="snowman.gif" style="height: 170px;"> <img src="snowman.gif" style="height: 170px;">  </marquee> <hr>
+  <h1 style="color:black"> <img src="snowflakep.ico" style="height:20px;"> MadLibs: A Colder Day <img src="snowflakep.ico" style="height:20px;"> </h1>
+  <p> Name (make sure to capitalize): <input type="text" id="name2" >  </p>
+  <p> Verb with -ing: <input type="text" id="Verb2">  </p>
+  <p> Noun: <input type="text" id="Noun2">  </p>
+  <p> Animal : <input type="text" id="adj2" > </p>
+  <p> Verb : <input type="text" id="color2">  </p>
+  <p> Plural Noun: <input type="text" id="Adverb2">   </p>
+
+  <button type= "button" onclick="replace2()"> Submit and Get Your Story! </button>
+  <table border=1> <tr> <th id='no2'> </th> </tr> </table>
+  <script>
+  function replace2() {
+  var adj2=document.getElementById("adj2").value;
+  var name2=document.getElementById("name2").value;
+  var color2=document.getElementById("color2").value;
+  var verb2=document.getElementById("Verb2").value;
+  var noun2=document.getElementById("Noun2").value;
+  var adverb2= document.getElementById("Adverb2").value;
+    document.getElementById('no2').innerHTML= "Anna ventures out to find " + name2 +" and end the winter, leaving Hans in charge. She gets lost, "+verb2+
+    " supplies at Wandering Oaken's " + noun2 + ". She meets an ice harvester, Kristoff, and his " + adj2 +
+    " Sven, convincing them to " + color2 +
+    " her to the mountains. An attack by "+ adverb2+ " leads to Kristoff’s sleigh being destroyed.";
+
+  }
+  </script>
+
+
+<a href="#chapter1"> Back to the Top! </a>
+
+answer="Joe";
+if(answer=="Joey"){print ("how you doin'?");}
+</html>
