@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Taylor Swift 1989 Quiz</title>
+<style>
+p {font-family:font-size: 50px}
+input {font-size: 20px;}
+img {height: 50px}
+</style>
+
+<body style="background-color:#d9b3ff">
+
+<center>
+  <p style="font-family:MoonFlowerBold;font-size:70px">Taylor Swift 1989</p>
+  <hr>
+  <p style="font-family:MoonFlowerBold;font-size:60px">Personality Quiz: Which Taylor Swift Song Are You?</p>
+</center>
+
+<blockquote>
+<p> Do you like Taylor Swift?</p>
+    <input type="radio" name="Q1" value=0> Yes <br>
+    <input type="radio" name="Q1" value=5> Not really. <br>
+    <input type="radio" name="Q1" value=1000> I hate her with a burning passion.
+    <HR>
+<p> Are you a romantic? </p>
+    <input type="radio"  name="Q2"value=0>  Yes. <br>
+    <input type="radio" name="Q2"value=10> Not after my last relationship. <br>
+    <input type="radio" name="Q2" value=20> I don’t care about relationships?
+    <HR>
+<p> Do you care about people’s opinion of you?</p>
+    <input type="radio" name="Q3" value=5> Duh, who doesn’t?  <br>
+    <input type="radio" name="Q3"value=10> What is the meaning of life though? <br>
+    <input type="radio" name="Q3" value=20> No, of course not!
+    <HR>
+<p> What is the most important thing in your life? </p>
+    <input type="radio" name="Q4" value=5> Love  <br>
+    <input type="radio" name="Q4" value=10> ME. Love yourself before you love anyone else. (Also screw my ex haha!)  <br>
+    <input type="radio" name="Q4" value=20> Food
+
+<HR>
+<P> Where would you like to go on a vacation to? </P>
+    <input type="radio" id="1" name="Q5" value=5>Paris<br>
+    <input type="radio" id="2"name="Q5" value=10>Hawaii<br>
+    <input type="radio" id="3"name="Q5" value=15>Nowhere (especially after my last relationship)<br>
+    <input type="radio" id="4"name="Q5" value=17>Movie Theater<br>
+    <input type="radio" id="5"name="Q5" value=20>Japan<br>
+    <input type="radio" id="6" name="Q5" value=25>Spain<br>
+</blockquote>
+<p id="no"> </p>
+<button type= "button" onclick="replace2()"> Submit! </button>
+
+<script>
+function replace2() {
+  var x;
+  var total=document.querySelector('input[name="Q1"]:checked').value+document.querySelector('input[name="Q2"]:checked').value++document.querySelector('input[name="Q3"]:checked').value++document.querySelector('input[name="Q4"]:checked').value++document.querySelector('input[name="Q5"]:checked').value;
+
+document.getElementById('no').innerHTML= total;
+}
+</script>
+
+</body>
+</html>
